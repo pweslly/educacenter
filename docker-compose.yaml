@@ -6,7 +6,7 @@ services:
     build:
         context: .
         dockerfile: Dockerfile
-    image: pweslly/apache:V1
+    image: pweslly/apache
     ports:
       - 8080:80
     
