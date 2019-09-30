@@ -1,19 +1,17 @@
 *
 {
   margin: 0;
-  padding: 0;
-  
+  padding: 0; 
 }
 section
 {
   position: relative;
   width: 100%;
   height: 100vh;
-  background:#3586ff;
+  background-color:#3586ff;
   overflow:hidden;
   
 }
-
 .jumbotron-heading{
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 700;
@@ -84,6 +82,68 @@ section .wave.wave4
   opacity: 0.7;
   animation-delay: -5s;
   bottom: 20px;
+}
+.middle{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align:center;
+}
+.btn{
+  display: inline-block; 
+  width: 90px;
+  height: 90px;
+  /*background: #f1f1f1; */
+  margin: 10px;  
+  border-radius: 30% #f2f2f2;  
+  box-shadow: 0 5px 15px -5px #00000070;
+  color:  #3498db;
+  overflow: hidden;
+  position: relative; 
+}
+.btn i
+{
+  line-height: 90px;
+  font-size: 26px;
+  transition: 0.2s linear;  
+}
+.btn:hover i
+{
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+.btn::before{
+  content: "";
+  position: absolute;
+  width:120%;
+  height: 120%;
+  background: #3498db;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+.btn:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+@keyframes aaa{
+  0%
+  {
+    left: -110%;
+    top:90%;
+  }
+  50%
+  {
+    left: 10%;
+    top: -30%;
+  }
+  100%
+  {
+    top: -10%;
+    left: -10%;
+  }
 }
 @keyframes animate
 {
