@@ -2,8 +2,7 @@
 {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans Condensed', sans-serif;
-  color: white;
+  
 }
 section
 {
@@ -12,10 +11,37 @@ section
   height: 100vh;
   background:#3586ff;
   overflow:hidden;
+  
 }
 
-.logo{
-  margin-top:10em; 
+.jumbotron-heading{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  font-stretch: ultra-expanded;
+  color: #fff; 
+
+}
+.jumbotron-heading span
+{
+  display:block; 
+}
+.text1
+{
+  color:white;
+  font-size:60px;
+  font-weight:700;
+  letter-spacing:8px;
+  margin-bottom:20px;
+  position:relative;
+  animation: text 10s 1;
+  width:100%;
+  }
+.logo
+{
+    background: url(/assets/images/logo.jpeg);
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 400px;
 }
 section .wave
 {
@@ -24,7 +50,7 @@ section .wave
   left: 0;
   width:100%;
   height: 100px;
-  background: url(/assets/images/wave.png);
+  background: url(./assets/wave.png);
   background-size: 1000px 100px;
 }
 section .wave.wave1
@@ -80,4 +106,58 @@ section .wave.wave4
   {
     background-position-x: -1000px;
   }
+}
+
+@keyframes text{
+  0%{
+    color:#3586ff;
+    margin-bottom:-40px;
+  }
+  30%{
+    letter-spacing:25px;
+    margin-bottom:-40px;
+  }
+  85%{
+    letter-spacing:8px;
+    margin-bottom:-40px;
+  }
+}
+
+
+/* min-width & max-width */
+@media screen and (min-width: 292px) and (max-width: 440px) {
+
+  .jumbotron-heading span
+  {
+    display:block;
+    margin-top:-3.5em; 
+  }
+  .text1
+  {
+    color:white;
+    font-size:30px;
+    font-weight:700;
+    letter-spacing:8px;
+    margin-bottom:20px;
+    position:relative;
+    animation: text 10s 1;
+    width:100%;
+    }
+    @keyframes text{
+      0%{
+        color:#3586ff;
+        margin-bottom:-40px;
+      }
+      30%{
+        letter-spacing:20px;
+        margin-bottom:-40px;
+      }
+      85%{
+        letter-spacing:8px;
+        margin-bottom:-40px;
+      }
+    }
+
+
+  
 }
