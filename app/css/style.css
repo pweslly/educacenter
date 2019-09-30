@@ -89,12 +89,13 @@ section .wave.wave4
   transform: translateY(-50%);
   width: 100%;
   text-align:center;
+  margin-top: 10em;
 }
 .btn{
   display: inline-block; 
   width: 90px;
   height: 90px;
-  /*background: #f1f1f1; */
+  background: #f1f1f1;
   margin: 10px;  
   border-radius: 30% #f2f2f2;  
   box-shadow: 0 5px 15px -5px #00000070;
@@ -116,8 +117,8 @@ section .wave.wave4
 .btn::before{
   content: "";
   position: absolute;
-  width:120%;
-  height: 120%;
+  width:130%;
+  height: 150%;
   background: #3498db;
   transform: rotate(45deg);
   left: -110%;
