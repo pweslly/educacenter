@@ -16,7 +16,9 @@ section
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 700;
   font-stretch: ultra-expanded;
-  color: #fff; 
+  color: #fff;
+  margin-top: -1.5em;
+
 
 }
 .jumbotron-heading span
@@ -34,12 +36,10 @@ section
   animation: text 10s 1;
   width:100%;
   }
-.logo
+.mylogo
 {
-    background: url(/assets/images/logo.jpeg);
-    background-repeat: no-repeat;
-    width: 600px;
-    height: 400px;
+  transform: scaleX(-50%);
+  margin-top: 50px;
 }
 section .wave
 {
@@ -187,18 +187,26 @@ section .wave.wave4
 
 /* min-width & max-width */
 @media screen and (min-width: 292px) and (max-width: 440px) {
-
+  .middle{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align:center;
+    margin-top: 8em;
+  }  
+  
   .jumbotron-heading span
   {
     display:block;
-    margin-top:-3.5em; 
+    margin-top:-1.5em; 
   }
   .text1
   {
     color:white;
     font-size:30px;
     font-weight:700;
-    letter-spacing:8px;
+    letter-spacing:8px;    
     margin-bottom:20px;
     position:relative;
     animation: text 10s 1;
@@ -218,7 +226,15 @@ section .wave.wave4
         margin-bottom:-40px;
       }
     }
+}
+@media screen and (min-width: 924px){
+  .middle{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align:center;
+    margin-top: 7em;
+  }
 
-
-  
 }
