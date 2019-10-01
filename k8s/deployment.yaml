@@ -14,7 +14,7 @@ spec:
         app: app
     spec:
       containers: 
-      - name: educacenter-apache2
+      - name: educacenter-apache
         image: docker.io/pweslly/apache
         ports:
         - containerPort: 80 
